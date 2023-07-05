@@ -24,12 +24,12 @@ public class Main {
         BaseballPlayer pat =  new BaseballPlayer("Pat");
         SoccerPlayer beckham = new SoccerPlayer("Beckham");
 
-        Team<SoccerPlayer> liverpool = new Team("Liverpool"); // tean accepts any objetc
-        liverpool.addPlayer(joe);
-        liverpool.addPlayer(pat);
+        Team<SoccerPlayer> liverpool = new Team("Liverpool"); // tean accepts any object unless we put <> generics
+ //       liverpool.addPlayer(joe);
+  //      liverpool.addPlayer(pat);
         liverpool.addPlayer(beckham);
 
-
+            //1:35
 
 
     }
