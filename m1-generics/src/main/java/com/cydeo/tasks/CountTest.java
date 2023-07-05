@@ -19,7 +19,6 @@ public class CountTest {
                 ++count;
             }
         }
-
         return count;
     }
 
