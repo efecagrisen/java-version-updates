@@ -38,6 +38,14 @@ public class Main {
         System.out.println("Operation Task");
         calculate(3,5,Operation.PLUS);
 
+        System.out.println("How to retrieve the constant value");
+
+        System.out.println("PENNY = " + Currency.PENNY.getValue());
+        System.out.println("QUARTER = " + Currency.QUARTER.getValue());
+        System.out.println("index of QUARTER = " + Currency.QUARTER.ordinal()); // 3 ordinal gives the index number
+
+
+
     }
 
     private static void calculate (double x, double y, Operation operation){
