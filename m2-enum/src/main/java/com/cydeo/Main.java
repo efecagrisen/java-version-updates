@@ -35,7 +35,33 @@ public class Main {
                 break;
         }
 
-
+        System.out.println("Operation Task");
+        calculate(3,5,Operation.PLUS);
 
     }
+
+    private static void calculate (double x, double y, Operation operation){
+
+        switch (operation){
+
+            case PLUS:
+                System.out.println(x+y);
+                break;
+            case MINUS:
+                System.out.println(x-y);
+                break;
+            case MULTIPLY:
+                System.out.println(x*y);
+                break;
+            case DIVIDE:
+                System.out.println(x/y);
+                break;
+
+        }
+
+    }
+
+
+
+
 }
