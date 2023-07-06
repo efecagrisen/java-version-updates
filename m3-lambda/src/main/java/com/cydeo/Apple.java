@@ -1,9 +1,9 @@
 package com.cydeo;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
+//import lombok.Getter;
+//import lombok.Setter;
+//import lombok.ToString;
 
 @Getter
 @Setter
