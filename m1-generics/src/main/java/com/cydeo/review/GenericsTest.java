@@ -19,6 +19,10 @@ public class GenericsTest {
 
         printList(studentList);
 
+        printList2(studentList);
+        printList2(teacherList);
+
+
     }
 
     // write a method that takes a list of stuents prints each students and total sturdent type
@@ -28,6 +32,18 @@ public class GenericsTest {
             System.out.println(student);
             }
         System.out.println("Total students: "+studentList.size());
+    }
+
+    public static <T> void printList2 (List<T> personList){
+        for(T person : personList){
+            System.out.println(person);
+        }
+        System.out.println("Total person: "+personList.size());
+    }
+
+    public static <I> I getLastItem (List<I> list){
+        return list.get(list.size()-1);
+
     }
 
 
