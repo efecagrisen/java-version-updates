@@ -22,13 +22,17 @@ public class GenericsTest {
         printList2(studentList);
         printList2(teacherList);
 
+        System.out.println("------------");
         MyUtils<Student> obj1 = new MyUtils<>();
         obj1.printList2(studentList);
         System.out.println(obj1.getLastItem(studentList));
 
+        System.out.println("--------");
         MyUtils<Teacher> obj2 = new MyUtils<>();
-        obj2.getLastItem(teacherList);
+        obj2.printList2(teacherList);
         System.out.println(obj2.getLastItem(teacherList));
+
+
 
 
     }
