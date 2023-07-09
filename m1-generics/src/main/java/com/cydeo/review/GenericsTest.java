@@ -22,6 +22,14 @@ public class GenericsTest {
         printList2(studentList);
         printList2(teacherList);
 
+        MyUtils<Student> obj1 = new MyUtils<>();
+        obj1.printList2(studentList);
+        System.out.println(obj1.getLastItem(studentList));
+
+        MyUtils<Teacher> obj2 = new MyUtils<>();
+        obj2.getLastItem(teacherList);
+        System.out.println(obj2.getLastItem(teacherList));
+
 
     }
 
@@ -41,7 +49,7 @@ public class GenericsTest {
         System.out.println("Total person: "+personList.size());
     }
 
-    public static <I> I getLastItem (List<I> list){
+    public static <T> T getLastItem (List<T> list){
         return list.get(list.size()-1);
 
     }
