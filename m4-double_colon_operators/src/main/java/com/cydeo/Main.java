@@ -1,6 +1,7 @@
 package com.cydeo;
 
 import java.util.function.BiFunction;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 
@@ -30,6 +31,11 @@ public class Main {
 
         Function<Integer, Double > b = new MyClass()::method; // calling the static method with an object
         BiFunction<MyClass,Integer,Double> b1 = MyClass::method; // BiFunction takes 3 args and the first arg is already makes the object clear, so the instance method can be directly called without creating a new object.
+
+        Consumer<Integer> display = i -> System.out.println(i);
+        Consumer<Integer> display2 = System.out  ::  println;
+//                                 static portion   method name
+
 
 
 
