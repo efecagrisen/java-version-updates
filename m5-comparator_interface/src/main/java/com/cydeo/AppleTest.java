@@ -27,6 +27,8 @@ public class AppleTest {
         inventory.sort(comparing(Apple::getWeight));
         System.out.println(inventory);
 
+        //2:18
+
         
     }
 
