@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
+import static java.util.Comparator.comparing;
+
 public class AppleTest {
 
     public static void main(String[] args) {
@@ -15,10 +17,15 @@ public class AppleTest {
         inventory.add(new Apple(50,Color.RED));
 
       //Interface      implementation
-        Comparator<Apple> sortApple = Comparator.comparing((Apple apple)-> apple.getWeight());
+        Comparator<Apple> sortApple = comparing((Apple apple)-> apple.getWeight());
         inventory.sort(sortApple);
         System.out.println(inventory);
 
+//        Comparator<Apple> sortApple2 = comparing(Apple::getWeight);
+//        inventory.sort(sortApple);
+
+        inventory.sort(comparing(Apple::getWeight));
+        System.out.println(inventory);
 
         
     }
