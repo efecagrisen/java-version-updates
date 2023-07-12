@@ -14,6 +14,7 @@ public class DishTask {
                 .map(Dish::getName)
                 .forEach(System.out::println);
 
+
         System.out.println();
         // print the length of the name of each dish
         System.out.println("print the length of the name of each dish");
@@ -22,6 +23,7 @@ public class DishTask {
               //.map(dish -> dish.length())
                 .map(String::length)
                 .forEach(System.out::println);
+
 
         System.out.println();
         // print three high caloric dish name (>300)
@@ -32,6 +34,7 @@ public class DishTask {
                 .limit(3)
                 .forEach(System.out::println);
 
+
         System.out.println();
         // print all dish name that are below 400 calories in sorted
         System.out.println("print all dish name that are below 400 calories in sorted");
@@ -39,6 +42,7 @@ public class DishTask {
                 .filter(dish -> dish.getCalories()<400)
                 .sorted(Comparator.comparing(Dish::getCalories))
                 .map(Dish::getName)
+                // Stream<String> means that you have only string in the stream anymore
                 .forEach(System.out::println);
 
     }
