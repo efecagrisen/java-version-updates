@@ -39,14 +39,20 @@ System.out.println("-----LIMIT-----");
                 .forEach(System.out::println);
 
 //SKIP
-        System.out.println("-----SKIP-----");
+System.out.println("-----SKIP-----");
 
         list.stream()
                 .filter(i -> i%2==0)
                 .skip(2) // skips the first n number of elements
                 .forEach(System.out::println);
 
+//MAP
+        System.out.println("-----MAP-----");
 
+        list.stream()
+                .filter(i -> i%2==0)
+                .map(i->i*3) // multiplies each element with 3, we can access each element with map // <R> Stream<R> map(Function<? super T, ? extends R> mapper);
+                .forEach(System.out::println);
 
 
 
