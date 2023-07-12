@@ -54,6 +54,8 @@ System.out.println("-----SKIP-----");
                 .map(i->i*3) // multiplies each element with 3, we can access each element with map // <R> Stream<R> map(Function<? super T, ? extends R> mapper);
                 .forEach(System.out::println);
 
+        //59:00
+
 
 
 
