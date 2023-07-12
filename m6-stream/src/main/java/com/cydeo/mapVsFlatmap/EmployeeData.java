@@ -5,7 +5,7 @@ import java.util.stream.Stream;
 
 public class EmployeeData {
 
-    public static Stream<Employee> realAll(){
+    public static Stream<Employee> readAll(){
         return Stream.of(
                 new Employee(100,"Mike" , "mike@cydeo.com", Arrays.asList("2022028765","7033263425")),
                 new Employee(101,"Ozzy" , "ozzy@cydeo.com", Arrays.asList("2022588765","7848763425")),
