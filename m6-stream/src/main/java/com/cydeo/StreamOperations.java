@@ -8,7 +8,7 @@ public class StreamOperations {
 
     public static void main(String[] args) {
 
-        List<Integer> list = Arrays.asList(1,2,2,3,4,5,6,6,8);
+        List<Integer> list = Arrays.asList(12,24,20,36,3,3,3,4,4,4,5,5,5,6,6,8);
 //        list.forEach(x -> System.out.println(x));
         list.forEach(System.out::println); // if it can be written with :: intelliJ highlights the code
 
@@ -55,6 +55,14 @@ System.out.println("-----SKIP-----");
                 .forEach(System.out::println);
 
         //59:00
+        System.out.println("-----------");
+        list.stream()
+                .map(number -> number*2) // multiplies each element with 2,
+                .filter(i -> i%3==0) // return numbers divisible by 3
+                .distinct() // return unique numbers
+                .forEach(System.out::println);
+
+
 
 
 
