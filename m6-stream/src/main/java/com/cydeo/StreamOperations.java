@@ -35,10 +35,16 @@ System.out.println("-----LIMIT-----");
 
         list.stream()
                 .filter(i -> i%2==0)
-                .limit(1)
+                .limit(1) // gives the first n number of elements
                 .forEach(System.out::println);
 
+//SKIP
+        System.out.println("-----SKIP-----");
 
+        list.stream()
+                .filter(i -> i%2==0)
+                .skip(2) // skips the first n number of elements
+                .forEach(System.out::println);
 
 
 
