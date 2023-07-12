@@ -30,6 +30,14 @@ System.out.println("-----DISTINCT-----");
 
 // 42:00
 
+//LIMIT
+System.out.println("-----LIMIT-----");
+
+        list.stream()
+                .filter(i -> i%2==0)
+                .limit(1)
+                .forEach(System.out::println);
+
 
 
 
