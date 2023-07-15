@@ -4,6 +4,7 @@ import com.cydeo.task.Dish;
 import com.cydeo.task.DishData;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.IntStream;
@@ -58,6 +59,17 @@ public class FindingMatching {
         System.out.println(findFirst.get()); //David
         System.out.println(findAny.get()); // Jill
 
+
+        //MIN AND MAX
+//        Optional<T> min(Comparator<? super T> comparator);
+//        Optional<T> max(Comparator<? super T> comparator);
+        System.out.println("-----min-----");
+        Optional<Dish> dishMin = DishData.getAll().stream().min(Comparator.comparing(Dish::getCalories));
+        System.out.println(dishMin.get());
+
+        System.out.println("-----max-----");
+        Optional<Dish> dishMax = DishData.getAll().stream().max(Comparator.comparing(Dish::getCalories));
+        System.out.println(dishMax.get());
 
 
 
