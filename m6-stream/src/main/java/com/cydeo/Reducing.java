@@ -31,6 +31,7 @@ public class Reducing {
         System.out.println(totalCalories);
 
         //Max and Min
+        System.out.println("-----Max and Min-----");
         Optional<Integer> min = numbers.stream().reduce(Integer::min);
         Optional<Integer> max = numbers.stream().reduce(Integer::max);
         Optional<Integer> sum = numbers.stream().reduce(Integer::sum);
@@ -40,7 +41,8 @@ public class Reducing {
         System.out.println("sum = " + sum.get());
 
         //COUNT
-        long dishCount = DishData.getAll().stream().count();
+        System.out.println("-----COUNT-----");
+        long dishCount = DishData.getAll().stream().count(); //long count();
         System.out.println(dishCount);
 //1:31
 
