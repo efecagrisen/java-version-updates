@@ -35,7 +35,8 @@ public class BigDecimalDemo {
         System.out.println(new BigDecimal("2").compareTo(new BigDecimal("2")));
         System.out.println(new BigDecimal("3").compareTo(new BigDecimal("2")));
         System.out.println(new BigDecimal("1").compareTo(new BigDecimal("2")));
-        /** compare to returns >> return xs != ys ? ((xs > ys) ? 1 : -1) : 0; */
+        /** compareTo() returns >> return xs != ys ? ((xs > ys) ? 1 : -1) : 0; */
+        //1:19:55
 
 
 
